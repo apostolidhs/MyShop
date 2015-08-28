@@ -1,0 +1,928 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"bac",
+				"background-color"
+			],
+			[
+				"margin",
+				"margin-top"
+			],
+			[
+				"cat",
+				"categories"
+			],
+			[
+				"ba",
+				"background-color"
+			],
+			[
+				"art",
+				"articleViewHasClose"
+			],
+			[
+				"Arg_P",
+				"Arg_PreviewFetch"
+			],
+			[
+				"Arg",
+				"Arg_Create"
+			],
+			[
+				"padd",
+				"padding"
+			],
+			[
+				"margi",
+				"margin"
+			],
+			[
+				"Extr_new",
+				"Extr_news_gr"
+			],
+			[
+				"Extr_news",
+				"Extr_news247_gr"
+			],
+			[
+				"Extr_bbc_",
+				"Extr_bbc_co_uk"
+			],
+			[
+				"Moto",
+				"moto"
+			],
+			[
+				"onS",
+				"onSocialPostShareFinished"
+			],
+			[
+				"acc",
+				"setAccessToken"
+			],
+			[
+				"new",
+				"newTitle"
+			],
+			[
+				"TARG",
+				"TargetEntry"
+			],
+			[
+				"desc",
+				"descr"
+			],
+			[
+				"goo",
+				"googlePlus"
+			],
+			[
+				"li",
+				"linkedIn"
+			],
+			[
+				"Sha",
+				"ShareTwitter"
+			],
+			[
+				"is",
+				"isUndefined"
+			],
+			[
+				"ma",
+				"margin-left"
+			],
+			[
+				"marg",
+				"margin"
+			],
+			[
+				"text",
+				"text-align"
+			],
+			[
+				"W_",
+				"W_G"
+			],
+			[
+				"Sh",
+				"ShowNotFound"
+			],
+			[
+				"targ",
+				"targetEntry"
+			],
+			[
+				"border",
+				"border-radius"
+			],
+			[
+				"En",
+				"EntryView"
+			],
+			[
+				"retri",
+				"RetrieveAll"
+			],
+			[
+				"max",
+				"max-height"
+			],
+			[
+				"pro",
+				"ProviderPageView"
+			],
+			[
+				"coo",
+				"CookiesPageView"
+			],
+			[
+				"abou",
+				"AboutPageView"
+			],
+			[
+				"de",
+				"descrHasHtml"
+			],
+			[
+				"en",
+				"science_and_environment"
+			],
+			[
+				"remo",
+				"removeClass"
+			],
+			[
+				"mod",
+				"Models"
+			],
+			[
+				"mar",
+				"margin-top"
+			],
+			[
+				"l",
+				"lang"
+			],
+			[
+				"inl",
+				"inline-block"
+			],
+			[
+				"lik",
+				"likeTasks"
+			],
+			[
+				"vi",
+				"viewsLabel"
+			],
+			[
+				"add",
+				"addClass"
+			],
+			[
+				"menu",
+				"menuBtnSel"
+			],
+			[
+				"cate",
+				"categoryName"
+			],
+			[
+				"ca",
+				"categoryLinks"
+			],
+			[
+				"ent",
+				"entriesView"
+			],
+			[
+				"fu",
+				"function"
+			],
+			[
+				"fo",
+				"font-weight"
+			],
+			[
+				"font",
+				"font-size"
+			],
+			[
+				"fon",
+				"font-size"
+			],
+			[
+				"in",
+				"inline-block"
+			],
+			[
+				"Fetch",
+				"FetchRegistration"
+			],
+			[
+				"ta",
+				"targetPage"
+			],
+			[
+				"back",
+				"background-color"
+			],
+			[
+				"F",
+				"FetchReport"
+			],
+			[
+				"can",
+				"canDelete"
+			],
+			[
+				"mo",
+				"model"
+			],
+			[
+				"Co",
+				"Conf"
+			],
+			[
+				"Get",
+				"GetBaseRoute"
+			],
+			[
+				"fun",
+				"function"
+			],
+			[
+				"cons",
+				"console"
+			],
+			[
+				"as",
+				"assets"
+			],
+			[
+				"va",
+				"var_dump"
+			],
+			[
+				"col",
+				"color"
+			],
+			[
+				"d",
+				"div	Tag"
+			],
+			[
+				"TR",
+				"targetEl"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 392.0,
+		"last_filter": "to",
+		"selected_items":
+		[
+			[
+				"to",
+				"View: Toggle Side Bar"
+			],
+			[
+				"to s",
+				"View: Toggle Side Bar"
+			],
+			[
+				"sy ja",
+				"Set Syntax: JavaScript"
+			],
+			[
+				"sy j",
+				"Set Syntax: JavaScript"
+			],
+			[
+				"sy  j",
+				"Set Syntax: JavaScript"
+			],
+			[
+				"to si",
+				"View: Toggle Side Bar"
+			],
+			[
+				"sy p",
+				"Set Syntax: PHP"
+			],
+			[
+				"t",
+				"View: Toggle Side Bar"
+			],
+			[
+				"sy",
+				"Set Syntax: C"
+			],
+			[
+				"sy c",
+				"Set Syntax: C"
+			],
+			[
+				"too",
+				"View: Toggle Open Files in Side Bar"
+			],
+			[
+				"sy js",
+				"Set Syntax: JavaScript"
+			],
+			[
+				"sy ",
+				"Set Syntax: C"
+			],
+			[
+				"syj",
+				"Set Syntax: JavaScript"
+			],
+			[
+				"sy css",
+				"Set Syntax: CSS"
+			],
+			[
+				"sy php",
+				"Set Syntax: PHP"
+			],
+			[
+				" sy c",
+				"Set Syntax: C"
+			],
+			[
+				"sy text",
+				"Set Syntax: Plain Text"
+			],
+			[
+				"sy cs",
+				"Set Syntax: CSS"
+			],
+			[
+				"mark",
+				"Set Syntax: Markdown"
+			],
+			[
+				"ma",
+				"Set Syntax: MultiMarkdown"
+			],
+			[
+				"tog",
+				"View: Toggle Side Bar"
+			],
+			[
+				"toggle",
+				"View: Toggle Side Bar"
+			],
+			[
+				"ins",
+				"Package Control: Install Package"
+			],
+			[
+				"pa",
+				"Package Control: Install Package"
+			],
+			[
+				"toggl",
+				"View: Toggle Side Bar"
+			],
+			[
+				"men",
+				"View: Toggle Menu"
+			],
+			[
+				"sta",
+				"View: Toggle Status Bar"
+			],
+			[
+				"togglr",
+				"View: Toggle Status Bar"
+			],
+			[
+				"sideb",
+				"View: Toggle Open Files in Side Bar"
+			],
+			[
+				"min",
+				"View: Toggle Minimap"
+			],
+			[
+				"in",
+				"Package Control: Install Package"
+			],
+			[
+				"",
+				"About"
+			],
+			[
+				"inst",
+				"Package Control: Install Package"
+			],
+			[
+				"sid",
+				"View: Toggle Side Bar"
+			],
+			[
+				"mini",
+				"View: Toggle Minimap"
+			],
+			[
+				"sy ma",
+				"Set Syntax: Markdown"
+			],
+			[
+				"sni",
+				"Snippet: #!/usr/bin/env"
+			],
+			[
+				"sn",
+				"Snippet: Debounced function"
+			],
+			[
+				"Snippet: ",
+				"Snippet: Prototype"
+			],
+			[
+				"Package Control: ",
+				"Package Control: Enable Package"
+			],
+			[
+				"packa",
+				"Package Control: List Packages"
+			],
+			[
+				"package ",
+				"Package Control: List Packages"
+			],
+			[
+				"package c",
+				"Package Control: Install Package"
+			],
+			[
+				"package co",
+				"Package Control: List Packages"
+			],
+			[
+				" sy ja",
+				"Set Syntax: JavaScript"
+			],
+			[
+				" sy jav",
+				"Set Syntax: JavaScript"
+			],
+			[
+				"sy jav",
+				"Set Syntax: JavaScript"
+			],
+			[
+				"SY JA",
+				"Set Syntax: JavaScript"
+			],
+			[
+				" sy java",
+				"Set Syntax: JavaScript"
+			],
+			[
+				"sy java",
+				"Set Syntax: JavaScript"
+			],
+			[
+				"sy h",
+				"Set Syntax: HTML"
+			]
+		],
+		"width": 400.0
+	},
+	"console":
+	{
+		"height": 214.0,
+		"history":
+		[
+			"import urllib.request,os,sys; exec(\"if sys.version_info < (3,) or os.name != 'nt': raise OSError('This code is for Windows ST3 only!')\"); pr='Preferences.sublime-settings'; ip='ignored_packages'; n='Package Control'; s=sublime.load_settings(pr); ig=s.get(ip); ig.append(n); s.set(ip,ig); sublime.save_settings('Preferences.sublime-settings'); pf=n+'.sublime-package'; urllib.request.install_opener(urllib.request.build_opener(urllib.request.ProxyHandler())); by=urllib.request.urlopen('https://packagecontrol.io/'+pf.replace(' ','%20')).read(); open(os.path.join(sublime.installed_packages_path(),pf),'wb').write(by); ig.remove(n); s.set(ip,ig); sublime.save_settings(pr); print('Package Control: 3.0.0 upgrade successful!')",
+			"import urllib.request,os,hashlib; h = '7183a2d3e96f11eeadd761d777e62404' + 'e330c659d4bb41d3bdf022e94cab3cd0'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://sublime.wbond.net/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/D/github/MyShop"
+	],
+	"file_history":
+	[
+		"/D/github/MyShop/public/index.html",
+		"/D/github/MyShop/public/js/main.js",
+		"/D/github/MyShop/bower.json",
+		"/D/github/MyShop/public/css/my-shop.less",
+		"/D/github/burger-porn/app/views/layouts/main.handlebars",
+		"/D/github/burger-porn/app.js",
+		"/D/github/MyShop/package.json",
+		"/D/github/burger-porn/package.json",
+		"/D/github/MyShop/gulpfile.js",
+		"/D/github/burger-porn/app/views/index.handlebars",
+		"/D/github/MyShop/public/css/style.less",
+		"/D/github/MyShop/.bowerrc",
+		"/D/github/burger-porn/.bowerrc",
+		"/D/github/burger-porn/bower.json",
+		"/D/github/burger-porn/gulpfile.js",
+		"/D/github/MyShop/app/index.html",
+		"/D/github/MyShop/Gruntfile.js",
+		"/D/github/burger-porn/public/css/style.less",
+		"/D/github/MyShop/dist/index.html",
+		"/D/github/burger-porn/public/js/main.js",
+		"/D/github/MyShop/app/scripts/main.js",
+		"/D/github/MyShop/dist/styles/vendor.4efe3e21.css",
+		"/D/github/MyShop/app/styles/main.css",
+		"/D/github/MyShop/dist/scripts/vendor.88694efe.js",
+		"/D/github/Wiregoose/Apps/UserClient/Controller/index.js",
+		"/D/github/Wiregoose/Apps/Server/Init/InitiateDb.js",
+		"/D/github/Wiregoose/Apps/UserClient/Controller/Client.js",
+		"/D/github/MyShop/test/spec/test.js",
+		"/D/github/Wiregoose/Apps/UserClient/public/js/Views/Entry/EntryView.js",
+		"/D/github/Wiregoose/Apps/UserClient/public/js/Templates/Entry.html",
+		"/D/github/Wiregoose/Apps/Common/config.js",
+		"/D/github/Wiregoose/Assets/bootstrap/less/wiregoose/w-client-entry.less",
+		"/D/github/Wiregoose/Assets/bootstrap/less/wiregoose/w-client.less",
+		"/D/github/Wiregoose/Apps/UserClient/public/js/Wiregoose.min.js",
+		"/D/github/Wiregoose/Apps/Server/Controller/Entry.js",
+		"/D/github/Wiregoose/Apps/UserClient/public/js/app.js",
+		"/D/github/Wiregoose/Apps/UserClient/public/js/Helpers/ConnectErrorHandler.js",
+		"/D/github/Wiregoose/Apps/UserClient/public/js/Collection/Entry.js",
+		"/D/github/Wiregoose/Apps/UserClient/public/js/Views/EntriesView.js",
+		"/D/github/Wiregoose/Apps/UserClient/public/js/Model/Entry.js",
+		"/D/github/Wiregoose/Apps/UserClient/public/js/Views/NotificationView.js",
+		"/D/github/Wiregoose/Apps/UserClient/public/js/Templates/CategoryMenu.html",
+		"/D/github/Wiregoose/Apps/UserClient/public/js/Views/CategoriesMenuView.js",
+		"/D/github/Wiregoose/Apps/UserClient/views/index.twig",
+		"/D/github/Wiregoose/Apps/Common/Translator.js",
+		"/D/github/Wiregoose/Apps/UserClient/public/js/PromsDecider.js",
+		"/D/github/Wiregoose/Apps/UserClient/public/js/Views/Entry/FBView.js",
+		"/D/github/Wiregoose/Assets/bootstrap/less/bootstrap.less",
+		"/D/github/Wiregoose/Apps/UserClient/public/js/Views/HeaderMenuView.js",
+		"/D/github/Wiregoose/Apps/UserClient/public/js/Model/Session.js",
+		"/D/github/Wiregoose/Apps/UserClient/public/js/Templates/DisableBlocker.html",
+		"/D/github/Wiregoose/Apps/Server/api.js",
+		"/D/github/Wiregoose/Apps/Server/Controller/Default.js",
+		"/D/github/Wiregoose/Apps/Server/Controller/index.js",
+		"/D/github/Wiregoose/Apps/Server/Controller/ArticleCrawler.js",
+		"/D/github/Wiregoose/Apps/UserClient/public/js/Views/Entry/TargetEntryView.js",
+		"/D/github/Wiregoose/Apps/UserClient/public/js/Templates/MenuPages/ProviderPage.html",
+		"/D/github/Wiregoose/Apps/UserClient/public/js/Views/MenuPages/ProviderPage.js",
+		"/D/github/Wiregoose/Assets/bootstrap/less/dropdowns.less",
+		"/D/github/Wiregoose/Assets/bootstrap/less/mixins/nav-divider.less",
+		"/D/github/Wiregoose/Assets/bootstrap/less/mixins.less",
+		"/D/github/Wiregoose/Assets/bootstrap/less/variables.less",
+		"/D/github/Wiregoose/Apps/UserClient/public/js/Templates/Share.html",
+		"/D/github/Wiregoose/Apps/UserClient/public/js/Views/ShareView.js",
+		"/D/github/Wiregoose/Apps/Server/Helpers/FbAutoPost.js",
+		"/D/github/Wiregoose/Apps/Server/Helpers/MongoosePlugins.js",
+		"/D/github/Wiregoose/Apps/Server/Controller/Cleaner.js",
+		"/D/github/Wiregoose/Apps/Common/RouteGenerator.js",
+		"/D/github/Wiregoose/Apps/Server/Helpers/ArgValidator.js",
+		"/D/github/Wiregoose/Apps/Common/ReqArgValidator.js",
+		"/D/github/Wiregoose/Apps/Server/Helpers/ResponseWrapper.js",
+		"/D/github/Wiregoose/Apps/Server/DB/DBManager.js",
+		"/D/github/burger-porn/.gitignore",
+		"/D/github/Wiregoose/Apps/UserClient/public/js/Views/MenuPages/BasicPage.js",
+		"/D/github/Wiregoose/Apps/UserClient/public/js/Helpers/ViewSelector.js",
+		"/D/github/Wiregoose/Apps/UserClient/public/js/Templates/MenuPages/CookiesPage.html",
+		"/D/github/Wiregoose/Apps/UserClient/public/js/Templates/MenuPages/CreatorsPage.html",
+		"/D/github/Wiregoose/Apps/UserClient/public/js/Templates/MenuPages/AboutPage.html",
+		"/D/github/Wiregoose/Apps/UserClient/public/js/Templates/Notification.html",
+		"/D/github/Wiregoose/Apps/UserClient/public/js/Helpers/Connect.js",
+		"/D/github/Wiregoose/Apps/UserClient/public/js/Views/RefreshContent.js",
+		"/D/github/Wiregoose/Apps/UserClient/public/js/Views/Entry/PromView.js",
+		"/D/github/Wiregoose/Apps/UserClient/public/js/Templates/PromEntry.html",
+		"/D/github/Wiregoose/Apps/UserClient/public/js/Views/Entry/DisableBlockerView.js",
+		"/D/github/Wiregoose/Apps/UserClient/public/js/Templates/FBEntry.html",
+		"/D/github/Wiregoose/Apps/UserClient/public/js/Views/FakeLoadView.js",
+		"/D/github/Wiregoose/Assets/bootstrap/less/wiregoose/w-readability.less",
+		"/D/github/Wiregoose/Apps/UserClient/public/js/Views/ArticleView/ReadableArticleView.js",
+		"/D/github/Wiregoose/Apps/UserClient/public/js/Templates/ArticleView/ReadableArticle.html",
+		"/D/github/Wiregoose/Apps/UserClient/public/js/Views/ArticleView/BasicArticleView.js",
+		"/D/github/Wiregoose/Apps/UserClient/public/js/Templates/ArticleView/Article.html",
+		"/D/github/Wiregoose/Apps/UserClient/public/js/Templates/ArticleView/ReadableArticleFail.html",
+		"/D/github/Wiregoose/Apps/UserClient/public/js/Templates/ArticleView/IframeArticle.html",
+		"/D/github/Wiregoose/Apps/UserClient/public/js/Views/ArticleView/IframeArticleView.js",
+		"/D/github/Wiregoose/Assets/Gruntfile.js",
+		"/D/github/Wiregoose/Assets/bootstrap/package.json",
+		"/D/github/Wiregoose/Assets/bootstrap/composer.json",
+		"/D/github/Wiregoose/Assets/bootstrap/less/w-client.less",
+		"/D/github/Wiregoose/Assets/bootstrap/less/utilities.less",
+		"/D/github/Wiregoose/Assets/bootstrap/less/w-admin.less",
+		"/D/github/Wiregoose/Doc/readme.md",
+		"/D/github/Wiregoose/Apps/UserClient/public/js/main.js",
+		"/D/github/Wiregoose/Apps/UserClient/public/js/Templates/AdEntry.html",
+		"/D/github/Wiregoose/Apps/UserClient/public/js/Views/Entry/AdView.js",
+		"/C/Users/apostolidis/AppData/Local/Temp/fz3temp-1/config.js",
+		"/C/Users/apostolidis/Desktop/interview",
+		"/D/github/Wiregoose/Apps/UserClient/Helpers/ResponseWrapper.js",
+		"/D/github/Wiregoose/Apps/UserClient/public/js/Views/Entry/BasicEntryView.js",
+		"/D/github/Wiregoose/Apps/UserClient/public/js/Templates/BasicEntry.html",
+		"/D/github/Wiregoose/Apps/UserClient/public/js/Views/TargetEntry.js",
+		"/D/github/Wiregoose/Apps/UserClient/public/js/Helpers/Utilities.js",
+		"/D/github/Wiregoose/Apps/UserClient/client.js",
+		"/C/Users/apostolidis/AppData/Local/Temp/fz3temp-1/Client.js",
+		"/D/github/Wiregoose/Apps/Server/Models/FetchReport.js",
+		"/D/github/Wiregoose/Apps/Server/Models/Session.js",
+		"/D/github/Wiregoose/Apps/Server/Models/Entry.js",
+		"/D/github/Wiregoose/Assets/bootstrap/Gruntfile.js",
+		"/D/github/Wiregoose/Apps/UserClient/public/css/wiregoose.min.css",
+		"/D/github/Wiregoose/Apps/UserClient/package.json",
+		"/D/github/Wiregoose/Assets/dist/js/Wiregoose.min.js",
+		"/D/github/Wiregoose/Apps/UserClient/public/js/Views/EntryView.js",
+		"/D/github/Wiregoose/Apps/Server/Routes/Entry.js",
+		"/D/github/Wiregoose/Apps/Server/Controller/RegistrationFetch.js",
+		"/C/Users/apostolidis/Desktop/bench",
+		"/D/github/Wiregoose/Apps/Server/Controller/SocialPost.js",
+		"/D/github/Wiregoose/Apps/Server/Helpers/RssConvertionPolicy.js",
+		"/D/github/Wiregoose/Doc/useful.txt",
+		"/D/Dropbox/kithara/aftapates se thola nera.txt"
+	],
+	"find":
+	{
+		"height": 34.0
+	},
+	"find_in_files":
+	{
+		"height": 90.0,
+		"where_history":
+		[
+			"D:\\github\\Wiregoose\\Apps",
+			"D:\\github\\Wiregoose\\Client",
+			"D:\\github\\Wiregoose\\TestingClient",
+			"D:\\github\\Wiregoose\\TestClient",
+			"D:\\github\\Wiregoose\\",
+			"D:\\github\\Wiregoose\\*",
+			"D:\\github\\Wiregoose"
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"webp",
+			"svgminPlugins",
+			"bower",
+			"modernizr",
+			"css",
+			"less",
+			"wiredep",
+			"cssmin",
+			"modernizr",
+			"concat",
+			"postcss",
+			"concurrent",
+			"concurrent:dist\nconcurrent",
+			"concurrent:dist",
+			"useminPrepare",
+			"wiredep",
+			"hint",
+			"http://www.newsbeast.gr/feeds/",
+			"it-user-selec",
+			"webkit-user-selec",
+			"@gray-lighter",
+			"img",
+			"CloseArticleView",
+			"remove",
+			"share",
+			"remove",
+			"2",
+			"w_f__MenuCats-body-item",
+			"console",
+			"conso",
+			"PromotionDecide",
+			"var",
+			"loading",
+			"articleView",
+			"class=\"testt\"",
+			"before",
+			"after",
+			"prefLang",
+			"W_f__header-navbar-nav-prefLang",
+			"unsyncedAttrinutes",
+			"preferedArticleView",
+			"prefer",
+			"CloseArticleView",
+			"remove",
+			"v",
+			"keepTargetEntry",
+			"onCategoryChange",
+			"deactivateCurrPage",
+			"openedArticleView",
+			"articleViewHasOpen",
+			"entriesViewRenderNewEntry",
+			"return",
+			"//ret",
+			"W_js__menuOpts-providers-col-img",
+			"nav-divider",
+			"dropdown-divider-bg",
+			"v",
+			"w-hd-head-info-width",
+			".w-gen-cardBox(@w-lg-entry-width, @w-lg-entry-margin);",
+			"screen and ",
+			"w-screenSize-sm--media",
+			"@w-screenSize-hd--media",
+			"w-hg-head-info-width",
+			"w-hg-entry-width",
+			"entries row",
+			"lang-menu-btn",
+			"content",
+			"W_f__header-navbar-nav-item-lang-btn",
+			"W_f__header-navbar-nav-prefLang",
+			"SetArticleViewOption",
+			"articleView",
+			"W_js__header-navbar-nav-prefLang-item",
+			"container",
+			"dropdown-menu",
+			"W_f__header-navbar-nav-prefLang-item",
+			"w-menu-article-view-container",
+			"w-article-view",
+			"other-menu-target",
+			"W_f__header-navbar-nav-item-lang-btn",
+			"lang-menu-btn",
+			"categories-menu-btn",
+			"lang-men",
+			"W_f__header-navbar-nav-item",
+			"W_f__header-navbar-brand-item",
+			"w-logo-img",
+			"navbar-nav",
+			"navbar-menu-entry",
+			"header",
+			"social-share-",
+			"find",
+			"w-social-item",
+			"w-text",
+			"w-menu-page",
+			"notification",
+			"}\nNotificationView",
+			"NotificationView",
+			"notification",
+			"w-alert-container",
+			"w-alert",
+			"'menu",
+			"\"menu",
+			"E",
+			"active",
+			"menu-check",
+			"menu-name",
+			"menu-color",
+			"v",
+			"menu-mlt-selectors-action",
+			"menu-mlt-selectors-action\nmenu-mlt-selectors-action",
+			"menu-mlt-enable-selectors-btn",
+			"menu-mlt-enable-selectors",
+			"menu-multicat",
+			"menu-cat",
+			"w_f__slideMenu-menus-left",
+			"snap-drawer-left",
+			"categories-menu",
+			"snap",
+			"2",
+			"drawers2",
+			"snap",
+			"snap-drawers",
+			"snap-content",
+			"container",
+			"content",
+			"refresh",
+			"ref",
+			"w_js__refresh",
+			".w_f__smCyrcle"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"#donate.user-form",
+			"destinationTarget + 'css/",
+			"../Common/Extra/Underscore"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 22.0
+	},
+	"input":
+	{
+		"height": 31.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "my-shop.sublime-project",
+	"replace":
+	{
+		"height": 40.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"d",
+				"Apps\\Server\\Controller\\Default.js"
+			],
+			[
+				"admin_token",
+				"Apps\\AdminClient\\node_modules\\stylus\\lib\\token.js"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 380.0
+	},
+	"select_symbol":
+	{
+		"height": 392.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 1132.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 296.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

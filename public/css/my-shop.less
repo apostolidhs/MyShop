@@ -1,0 +1,62 @@
+@import "../components/bootstrap/less/bootstrap.less";
+
+.mys_f__container {
+ 
+}
+
+.mys_f__products {
+  max-width: 80%;
+}
+
+.mys_f__products-sortByContent > *:not(:first-child) {
+  margin-left: 5px;
+}
+
+.mys_f__product {
+  max-width: 180px;
+  min-width: 170px;
+  height: 400px;
+  border: 2px solid  @gray-lighter;
+}
+.mys_f__product-info {
+  padding: 10px;
+  position: relative;
+  height:65%;
+  border-bottom: 2px solid  @gray-lighter;
+}
+.mys_f__product-info-promReward {
+  color: @brand-danger;
+  margin-top: 30px;
+}
+.mys_f__product-info-promEcoupon {
+  position: absolute;
+  bottom: 0px;
+  left: 29%;
+}
+.mys_f__product-order {
+  padding: 10px;
+  height:30%;
+}
+.mys_f__product-order-detailLabel {
+  margin-left: 25px;
+}
+.mys_f__product-order-detailLabel small {
+  font-size: 75%;
+}
+.mys_f__product-order-detailQtnbtn span{
+  color: @brand-primary;
+}
+.mys_f__product-order-detailQtninput {
+  width: 30px;
+  height: 22px;
+}
+
+.mys_f__basket {
+  position: fixed;
+  right:10px;
+  top:50px;
+  width: 200px;
+  border: 1px solid  @gray-lighter;
+  height: 80%;
+  background-color: red;
+}

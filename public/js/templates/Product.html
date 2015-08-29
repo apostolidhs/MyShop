@@ -1,0 +1,44 @@
+<% var COLLAPSE_CHAR_LENGTH = 48; %>
+
+<div class="mys_f__product-info">
+  <img src="<%= model.image %>" alt="..." class="img-rounded center-block mys_f__product-img">
+
+  <p class="mys_f__product-info-name text-center"> <%= model.name.length > COLLAPSE_CHAR_LENGTH ? model.name.substr(0, COLLAPSE_CHAR_LENGTH) + '...' : model.name  %></p>
+
+  <% if(!_.isEmpty(promReward)) { %>
+    <p class="mys_f__product-info-promReward center-block text-center"> <%= promReward[0].description %></p>
+  <% } %>
+
+  <% if(!_.isEmpty(promReward)) { %>
+    <small class="mys_f__product-info-promEcoupon"> Now cheaper</small>
+  <% } %>
+
+</div>
+<div class="mys_f__product-order">
+
+  <div class="mys_f__product-order-price clearfix">
+    <span class="mys_f__product-order-priceItem pull-left"><strong>£<%= model.price %></strong></span>
+    <span class="mys_f__product-order-priceUnit  pull-right"><small>(<%= model.unitPrice %>/<%= model.unitType %>)</small></span>
+  </div>
+
+  <span class="mys_f__product-order-detailLabel"><small>quantity</small></span>
+
+  <div class="mys_f__product-order-detail clearfix">
+    <div class="clearfix pull-left" role="group" aria-label="...">
+      <button type="button" class="mys_f__product-order-detailQtnbtn btn btn-default btn-xs pull-left">
+      <span class="glyphicon glyphicon-minus" aria-hidden="true"></span>
+      </button>
+      <input type="number" class="mys_f__product-order-detailQtninput pull-left">
+      <button type="button" class="mys_f__product-order-detailQtnbtn btn btn-default btn-xs pull-left">
+        <span class="glyphicon glyphicon-plus" aria-hidden="true"></span>
+      </button>
+    </div>
+    <button type="button" class="btn btn-primary btn-xs pull-right">Add</button>
+  </div>
+
+  <a href="#" class="mys_f__product-order-shopList center-block btn btn-link text-center"><small>Save to shopping list</small></a>
+
+  <a href="#" class="mys_f__product-order-restShelf btn btn-link center-block text-center"><small>Rest of shelf > </small></a>
+
+
+</div>

@@ -4,17 +4,17 @@
     <span class="pull-left">Sort by</span>
 
     <div class="dropdown pull-left">
-      <button class="btn btn-default btn-xs dropdown-toggle" type="button" id="mys_js__products-sortBy-action" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
-        Relevant
+      <button class="btn btn-default btn-xs dropdown-toggle" type="button" id="mys_js__products-sortBy-action" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true" sort-method="id">
+        <span class="mys_js__products-sortBy-actionName">Relevant</span>
         <span class="caret"></span>
       </button>
-      <ul class="dropdown-menu" aria-labelledby="mys_js__products-sortBy-action">
-        <li><a href="#">Price</a></li>
-        <li><a href="#">Name</a></li>
+      <ul class="mys_js__products-sortBy-methods dropdown-menu" aria-labelledby="mys_js__products-sortBy-action">
+        <li><a sort-method="price" href="#">Price</a></li>
+        <li><a sort-method="name" href="#">Name</a></li>
     </ul>
     </div>
 
-    <button type="button" class="btn btn-link btn-xs pull-left">Go <span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span></button>
+    <button type="button" class="mys_js__products-sortBy-actionbtn btn btn-link btn-xs pull-left">Go <span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span></button>
   </div>
 </div>
 

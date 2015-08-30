@@ -12,7 +12,8 @@ function(_, Backbone, ProductModel) {
     initialize: function(localStorage) {
       this.localStorage = localStorage;
     },
-    model:        ProductModel
+    model: ProductModel,
+    comparator: 'id'
   });
 
   return Model;

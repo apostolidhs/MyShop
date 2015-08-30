@@ -32,11 +32,12 @@ require([
   'models/Product',
   'collections/Products',
   'views/Products',
+  'views/Basket',
   'db/DB'
 ], 
 function(_, $, Backbone, LocalStorage, 
     Bootstrap, ProductModel, Products, 
-    ProductsView, DB
+    ProductsView, BasketView, DB
 
 ) {
   'use strict';
@@ -61,6 +62,12 @@ function(_, $, Backbone, LocalStorage,
     el:       $('#mys_js__targetProducts')
   });
   productsView.render();
+
+  var basketView = new BasketView({
+    products: products,
+    el:       $('#mys_js__basket')
+  });
+  basketView.render();  
 
   products.fetch();
   //new BasketProduct()

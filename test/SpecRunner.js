@@ -13,8 +13,10 @@ require.config({
     'chai-jquery': ['jquery', 'chai'],
     'mocha': {
         init: function () {
-            this.mocha.setup('bdd');
-            return this.mocha;
+          'use strict';
+
+          this.mocha.setup('bdd');
+          return this.mocha;
         }
     },
     'backbone': {
@@ -35,6 +37,8 @@ define([
   'mocha'
 ],
 function(chai, chaiJquery, mocha) {
+  'use strict';
+  
   var should = chai.should();
   chai.use(chaiJquery);
 

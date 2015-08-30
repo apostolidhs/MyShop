@@ -12,8 +12,8 @@ function(_, Backbone, ProductTemplate) {
 
     template: _.template(ProductTemplate),
 
-    initiate: function() {
-
+    initialize: function() {
+      this.listenTo(this.model, 'change:basketQty', this.refreshBasketQty);
     },
 
     render: function() {
@@ -32,6 +32,7 @@ function(_, Backbone, ProductTemplate) {
         })
       );
       this.setQtyinputVal(1);
+      this.refreshBasketQty();
       return this;
     },
 
@@ -39,7 +40,7 @@ function(_, Backbone, ProductTemplate) {
       'click .mys_js__product-order-detailQtnMinusbtn': 'refreshQtyMinus',
       'click .mys_js__product-order-detailQtnPlusbtn': 'refreshQtyPlus',
       'change .mys_js__product-order-detailQtyinput': 'refreshQtyInput',
-      'click .mys_js__product-order-detailBasketAdd': 'refreshBasketQty',
+      'click .mys_js__product-order-detailBasketAdd': 'onBasketQtyChange',
       'click .mys_js__product-order-shopList': 'notImplementWarning',
       'click .mys_js__product-order-restShelf': 'notImplementWarning'
     },
@@ -76,10 +77,22 @@ function(_, Backbone, ProductTemplate) {
       }
     },
 
-    refreshBasketQty: function() {
+    onBasketQtyChange: function() {
       var qtyVal = +this.$el.find('.mys_js__product-order-detailQtyinput').val();
       var basketQty = this.model.get('basketQty');
       this.model.set('basketQty', basketQty+qtyVal);
+    },
+
+    refreshBasketQty: function() {
+      var basketQty = this.model.get('basketQty');
+      if(basketQty>0) {
+        this.$el.find('.mys_js__product-inBasket-qty').text(basketQty);
+        this.$el.find('.mys_js__product-order').addClass('mys_is__product-orderInBasket');
+        this.$el.find('.mys_js__product-inBasket-content').show();
+      }else {
+        this.$el.find('.mys_js__product-inBasket-content').hide();
+        this.$el.find('.mys_js__product-order').removeClass('mys_is__product-orderInBasket');
+      }
     },
 
     notImplementWarning: function() {

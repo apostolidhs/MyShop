@@ -45,7 +45,7 @@ function(_, Backbone, BasketProductTemplate) {
 
     refreshQtyMinusBtn: function() {
       var basketQty = this.model.get('basketQty');
-      if(basketQty>2) {
+      if(basketQty>1) {
         this.$el.find('.mys_js__product-order-detailQtnMinusbtn').prop('disabled', false);
       }else {
         this.$el.find('.mys_js__product-order-detailQtnMinusbtn').prop('disabled', true);
@@ -53,9 +53,9 @@ function(_, Backbone, BasketProductTemplate) {
     },
 
     refreshQtyMinus: function() {
-      this.refreshQtyMinusBtn();
       var basketQty = this.model.get('basketQty');
       this.model.set('basketQty', Math.max(1, basketQty-1));
+      this.refreshQtyMinusBtn();
     },
 
     refreshQtyPlus: function() {

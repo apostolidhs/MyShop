@@ -9,7 +9,7 @@ function(_, Backbone, BasketProductTemplate) {
 
   var View = Backbone.View.extend({
 
-    className: 'mys_f__basket-product',
+    className: 'mys_js__basket-product mys_f__basket-product',
 
     template: _.template(BasketProductTemplate),
 
@@ -29,8 +29,8 @@ function(_, Backbone, BasketProductTemplate) {
     },
 
     events: {
-      'click .mys_js__product-order-detailQtnMinusbtn': 'refreshQtyMinus',
-      'click .mys_js__product-order-detailQtnPlusbtn': 'refreshQtyPlus',
+      'click .mys_js__product-order-detailQtyMinusbtn': 'refreshQtyMinus',
+      'click .mys_js__product-order-detailQtyPlusbtn': 'refreshQtyPlus',
       'change .mys_js__product-order-detailQtyinput': 'refreshQtyInput',
       'click .mys_js__basket-product-infoClose': 'closeBasketProduct'
     },
@@ -46,9 +46,9 @@ function(_, Backbone, BasketProductTemplate) {
     refreshQtyMinusBtn: function() {
       var basketQty = this.model.get('basketQty');
       if(basketQty>1) {
-        this.$el.find('.mys_js__product-order-detailQtnMinusbtn').prop('disabled', false);
+        this.$el.find('.mys_js__product-order-detailQtyMinusbtn').prop('disabled', false);
       }else {
-        this.$el.find('.mys_js__product-order-detailQtnMinusbtn').prop('disabled', true);
+        this.$el.find('.mys_js__product-order-detailQtyMinusbtn').prop('disabled', true);
       }
     },
 
@@ -60,7 +60,7 @@ function(_, Backbone, BasketProductTemplate) {
 
     refreshQtyPlus: function() {
       var basketQty = this.model.get('basketQty');
-      this.$el.find('.mys_js__product-order-detailQtnMinusbtn').prop('disabled', false);
+      this.$el.find('.mys_js__product-order-detailQtyMinusbtn').prop('disabled', false);
       this.model.set('basketQty', basketQty+1);
     },
 

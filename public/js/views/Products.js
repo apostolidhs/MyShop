@@ -42,6 +42,7 @@ function(_, Backbone, ProductView, ProductsTemplate) {
     },
 
     onSortMethodChange: function(evt) {
+
       var selected = this.$el.find('#mys_js__products-sortBy-action');
       var selectedName = this.$el.find('#mys_js__products-sortBy-action .mys_js__products-sortBy-actionName');
       var target = $(evt.target);

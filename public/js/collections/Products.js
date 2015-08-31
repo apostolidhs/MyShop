@@ -13,7 +13,7 @@ function(_, Backbone, ProductModel) {
       this.localStorage = localStorage;
     },
     model: ProductModel,
-    comparator: 'id'
+    comparator: 'IsFavourite'
   });
 
   return Model;

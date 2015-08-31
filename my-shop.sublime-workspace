@@ -4,6 +4,26 @@
 		"selected_items":
 		[
 			[
+				"su",
+				"brand-success-light"
+			],
+			[
+				"marg",
+				"margin-top"
+			],
+			[
+				"font",
+				"font-weight"
+			],
+			[
+				"border",
+				"border-color"
+			],
+			[
+				"lo",
+				"localStorage"
+			],
+			[
 				"bac",
 				"background-color"
 			],
@@ -96,10 +116,6 @@
 				"margin-left"
 			],
 			[
-				"marg",
-				"margin"
-			],
-			[
 				"text",
 				"text-align"
 			],
@@ -114,10 +130,6 @@
 			[
 				"targ",
 				"targetEntry"
-			],
-			[
-				"border",
-				"border-radius"
 			],
 			[
 				"En",
@@ -208,10 +220,6 @@
 				"font-weight"
 			],
 			[
-				"font",
-				"font-size"
-			],
-			[
 				"fon",
 				"font-size"
 			],
@@ -283,6 +291,22 @@
 	},
 	"buffers":
 	[
+		{
+			"file": "public/js/main.js",
+			"settings":
+			{
+				"buffer_size": 2299,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "public/js/views/Products.js",
+			"settings":
+			{
+				"buffer_size": 1955,
+				"line_ending": "Windows"
+			}
+		}
 	],
 	"build_system": "",
 	"build_system_choices":
@@ -292,9 +316,17 @@
 	"command_palette":
 	{
 		"height": 392.0,
-		"last_filter": "to",
+		"last_filter": "in",
 		"selected_items":
 		[
+			[
+				"in",
+				"Package Control: Install Package"
+			],
+			[
+				"insta",
+				"Package Control: Install Package"
+			],
 			[
 				"to",
 				"View: Toggle Side Bar"
@@ -420,10 +452,6 @@
 				"View: Toggle Minimap"
 			],
 			[
-				"in",
-				"Package Control: Install Package"
-			],
-			[
 				"",
 				"About"
 			],
@@ -504,7 +532,7 @@
 				"Set Syntax: HTML"
 			]
 		],
-		"width": 400.0
+		"width": 416.0
 	},
 	"console":
 	{
@@ -526,30 +554,115 @@
 	},
 	"expanded_folders":
 	[
-		"/D/github/MyShop"
+		"/D/github/MyShop",
+		"/D/github/MyShop/public",
+		"/D/github/MyShop/public/components",
+		"/D/github/MyShop/public/components/bootstrap",
+		"/D/github/MyShop/public/components/bootstrap/dist/js",
+		"/D/github/MyShop/public/components/bootstrap/less",
+		"/D/github/MyShop/public/css",
+		"/D/github/MyShop/public/js",
+		"/D/github/MyShop/public/js/collections",
+		"/D/github/MyShop/public/js/db",
+		"/D/github/MyShop/public/js/models",
+		"/D/github/MyShop/public/js/templates",
+		"/D/github/MyShop/public/js/views",
+		"/D/github/MyShop/test",
+		"/D/github/MyShop/views"
 	],
 	"file_history":
 	[
-		"/D/github/MyShop/public/index.html",
-		"/D/github/MyShop/public/js/main.js",
-		"/D/github/MyShop/bower.json",
+		"/D/github/MyShop/test/SpecRunner.js",
+		"/D/github/MyShop/test/units/ProductView.js",
+		"/D/github/MyShop/public/js/views/Product.js",
+		"/D/github/MyShop/test/units/ShopItem.js",
+		"/D/github/MyShop/public/js/collections/Products.js",
+		"/D/github/MyShop/test/index.html",
+		"/D/github/MyShop/public/js/views/BasketProduct.js",
 		"/D/github/MyShop/public/css/my-shop.less",
-		"/D/github/burger-porn/app/views/layouts/main.handlebars",
-		"/D/github/burger-porn/app.js",
-		"/D/github/MyShop/package.json",
-		"/D/github/burger-porn/package.json",
+		"/D/github/MyShop/public/index.html",
+		"/D/github/MyShop/public/js/templates/Product.html",
+		"/D/github/MyShop/public/js/views/Products.js",
+		"/D/github/MyShop/public/js/templates/BasketProduct.html",
+		"/D/github/MyShop/public/js/templates/Basket.html",
+		"/D/github/MyShop/public/js/main.js",
+		"/D/github/Wiregoose/Assets/bootstrap/less/wiregoose/w-client.less",
+		"/D/github/MyShop/public/js/views/Basket.js",
+		"/D/github/MyShop/public/js/templates/Products.html",
+		"/D/github/MyShop/public/components/bootstrap/less/grid.less",
+		"/D/github/Wiregoose/Apps/UserClient/public/js/Views/ArticleView/BasicArticleView.js",
+		"/D/github/Wiregoose/Apps/UserClient/public/js/Views/ArticleView/IframeArticleView.js",
+		"/D/github/Wiregoose/Apps/UserClient/public/js/Views/ArticleView/ReadableArticleView.js",
+		"/D/github/Wiregoose/Apps/UserClient/public/js/Views/ShareView.js",
+		"/D/github/Wiregoose/Apps/UserClient/public/js/Views/Entry/TargetEntryView.js",
+		"/D/github/Wiregoose/Apps/UserClient/public/js/Views/Entry/EntryView.js",
+		"/D/github/MyShop/public/components/bootstrap/less/variables.less",
+		"/D/github/MyShop/public/components/bootstrap/less/media.less",
+		"/D/github/MyShop/public/components/bootstrap/less/responsive-embed.less",
+		"/D/github/MyShop/public/components/bootstrap/less/responsive-utilities.less",
+		"/D/github/MyShop/public/js/models/Product.js",
+		"/D/github/MyShop/public/js/db/DB.js",
+		"/D/github/Wiregoose/Assets/bootstrap/less/wiregoose/w-client-entry.less",
+		"/D/github/MyShop/public/js/collections/BasketProducts.js",
+		"/D/github/MyShop/public/js/models/BasketProduct.js",
+		"/D/github/Wiregoose/Apps/UserClient/public/js/main.js",
+		"/D/github/Wiregoose/Apps/UserClient/public/js/Router.js",
+		"/D/github/Wiregoose/Apps/UserClient/public/js/Templates/Entry.html",
+		"/D/github/MyShop/public/js/models/Promotion.js",
+		"/D/Dropbox/Tesco-UI-Developer-Test-V2/data.json",
+		"/D/github/burger-porn/gulpfile.js",
 		"/D/github/MyShop/gulpfile.js",
+		"/D/github/burger-porn/public/js/views/love.js",
+		"/D/github/burger-porn/public/js/main.js",
+		"/D/github/burger-porn/public/js/views/location.js",
+		"/D/github/burger-porn/public/js/views/burger.js",
+		"/D/github/Wiregoose/Apps/UserClient/public/js/Collection/Entry.js",
+		"/D/github/burger-porn/app/controllers/burgers.js",
+		"/D/github/MyShop/MyShop/package.json",
+		"/D/github/MyShop/package.json",
+		"/D/github/Wiregoose/Apps/UserClient/public/js/Views/EntriesView.js",
+		"/D/github/MyShop/public/css/my-shop.css",
+		"/D/github/MyShop/public/components/bootstrap/Gruntfile.js",
+		"/D/github/MyShop/public/components/bootstrap/less/button-groups.less",
+		"/D/github/MyShop/public/components/bootstrap/less/bootstrap.less",
+		"/D/github/MyShop/public/js/collections/Promotions.js",
+		"/D/github/MyShop/.jshintrc",
+		"/D/github/MyShop/public/js/db/Products.js",
+		"/D/github/Wiregoose/Apps/UserClient/public/js/Model/Entry.js",
+		"/D/github/Wiregoose/Apps/UserClient/public/js/Model/BaseModel.js",
+		"/D/github/Wiregoose/Apps/UserClient/public/js/Model/Session.js",
+		"/D/github/MyShop/README.md",
+		"/D/github/MyShop/.gitignore",
+		"/D/github/MyShop/public/components/mocha/mocha.js",
+		"/D/github/MyShop/public/components/mocha/test.js",
+		"/D/github/MyShop/node_modules/mocha/mocha.js",
+		"/D/github/MyShop/node_modules/mocha/mocha.css",
+		"/D/github/MyShop/node_modules/mocha/README.md",
+		"/D/github/MyShop/node_modules/mocha/index.js",
+		"/D/github/MyShop/node_modules/mocha/lib/hook.js",
+		"/D/github/burger-porn/app.js",
+		"/D/github/MyShop/spec/helpers/jasmine_examples/SpecHelper.js",
+		"/D/github/MyShop/spec/jasmine_examples/PlayerSpec.js",
+		"/D/github/MyShop/lib/jasmine_examples/Player.js",
+		"/D/github/MyShop/lib/jasmine_examples/Song.js",
+		"/D/github/burger-porn/package.json",
+		"/D/github/MyShop/node_modules/jasmine/lib/examples/jasmine.json",
+		"/D/github/MyShop/spec/support/jasmine.json",
+		"/C/Users/apostolidis/AppData/Roaming/Sublime Text 3/Packages/User/SublimeLinter.sublime-settings",
+		"/C/Users/apostolidis/AppData/Roaming/Sublime Text 3/Packages/SublimeLinter/SublimeLinter.sublime-settings",
+		"/D/github/burger-porn/.jshintrc",
+		"/D/github/burger-porn/.gitignore",
+		"/D/github/MyShop/bower.json",
+		"/D/github/burger-porn/app/views/layouts/main.handlebars",
 		"/D/github/burger-porn/app/views/index.handlebars",
 		"/D/github/MyShop/public/css/style.less",
 		"/D/github/MyShop/.bowerrc",
 		"/D/github/burger-porn/.bowerrc",
 		"/D/github/burger-porn/bower.json",
-		"/D/github/burger-porn/gulpfile.js",
 		"/D/github/MyShop/app/index.html",
 		"/D/github/MyShop/Gruntfile.js",
 		"/D/github/burger-porn/public/css/style.less",
 		"/D/github/MyShop/dist/index.html",
-		"/D/github/burger-porn/public/js/main.js",
 		"/D/github/MyShop/app/scripts/main.js",
 		"/D/github/MyShop/dist/styles/vendor.4efe3e21.css",
 		"/D/github/MyShop/app/styles/main.css",
@@ -558,18 +671,11 @@
 		"/D/github/Wiregoose/Apps/Server/Init/InitiateDb.js",
 		"/D/github/Wiregoose/Apps/UserClient/Controller/Client.js",
 		"/D/github/MyShop/test/spec/test.js",
-		"/D/github/Wiregoose/Apps/UserClient/public/js/Views/Entry/EntryView.js",
-		"/D/github/Wiregoose/Apps/UserClient/public/js/Templates/Entry.html",
 		"/D/github/Wiregoose/Apps/Common/config.js",
-		"/D/github/Wiregoose/Assets/bootstrap/less/wiregoose/w-client-entry.less",
-		"/D/github/Wiregoose/Assets/bootstrap/less/wiregoose/w-client.less",
 		"/D/github/Wiregoose/Apps/UserClient/public/js/Wiregoose.min.js",
 		"/D/github/Wiregoose/Apps/Server/Controller/Entry.js",
 		"/D/github/Wiregoose/Apps/UserClient/public/js/app.js",
 		"/D/github/Wiregoose/Apps/UserClient/public/js/Helpers/ConnectErrorHandler.js",
-		"/D/github/Wiregoose/Apps/UserClient/public/js/Collection/Entry.js",
-		"/D/github/Wiregoose/Apps/UserClient/public/js/Views/EntriesView.js",
-		"/D/github/Wiregoose/Apps/UserClient/public/js/Model/Entry.js",
 		"/D/github/Wiregoose/Apps/UserClient/public/js/Views/NotificationView.js",
 		"/D/github/Wiregoose/Apps/UserClient/public/js/Templates/CategoryMenu.html",
 		"/D/github/Wiregoose/Apps/UserClient/public/js/Views/CategoriesMenuView.js",
@@ -579,13 +685,11 @@
 		"/D/github/Wiregoose/Apps/UserClient/public/js/Views/Entry/FBView.js",
 		"/D/github/Wiregoose/Assets/bootstrap/less/bootstrap.less",
 		"/D/github/Wiregoose/Apps/UserClient/public/js/Views/HeaderMenuView.js",
-		"/D/github/Wiregoose/Apps/UserClient/public/js/Model/Session.js",
 		"/D/github/Wiregoose/Apps/UserClient/public/js/Templates/DisableBlocker.html",
 		"/D/github/Wiregoose/Apps/Server/api.js",
 		"/D/github/Wiregoose/Apps/Server/Controller/Default.js",
 		"/D/github/Wiregoose/Apps/Server/Controller/index.js",
 		"/D/github/Wiregoose/Apps/Server/Controller/ArticleCrawler.js",
-		"/D/github/Wiregoose/Apps/UserClient/public/js/Views/Entry/TargetEntryView.js",
 		"/D/github/Wiregoose/Apps/UserClient/public/js/Templates/MenuPages/ProviderPage.html",
 		"/D/github/Wiregoose/Apps/UserClient/public/js/Views/MenuPages/ProviderPage.js",
 		"/D/github/Wiregoose/Assets/bootstrap/less/dropdowns.less",
@@ -593,71 +697,9 @@
 		"/D/github/Wiregoose/Assets/bootstrap/less/mixins.less",
 		"/D/github/Wiregoose/Assets/bootstrap/less/variables.less",
 		"/D/github/Wiregoose/Apps/UserClient/public/js/Templates/Share.html",
-		"/D/github/Wiregoose/Apps/UserClient/public/js/Views/ShareView.js",
 		"/D/github/Wiregoose/Apps/Server/Helpers/FbAutoPost.js",
 		"/D/github/Wiregoose/Apps/Server/Helpers/MongoosePlugins.js",
-		"/D/github/Wiregoose/Apps/Server/Controller/Cleaner.js",
-		"/D/github/Wiregoose/Apps/Common/RouteGenerator.js",
-		"/D/github/Wiregoose/Apps/Server/Helpers/ArgValidator.js",
-		"/D/github/Wiregoose/Apps/Common/ReqArgValidator.js",
-		"/D/github/Wiregoose/Apps/Server/Helpers/ResponseWrapper.js",
-		"/D/github/Wiregoose/Apps/Server/DB/DBManager.js",
-		"/D/github/burger-porn/.gitignore",
-		"/D/github/Wiregoose/Apps/UserClient/public/js/Views/MenuPages/BasicPage.js",
-		"/D/github/Wiregoose/Apps/UserClient/public/js/Helpers/ViewSelector.js",
-		"/D/github/Wiregoose/Apps/UserClient/public/js/Templates/MenuPages/CookiesPage.html",
-		"/D/github/Wiregoose/Apps/UserClient/public/js/Templates/MenuPages/CreatorsPage.html",
-		"/D/github/Wiregoose/Apps/UserClient/public/js/Templates/MenuPages/AboutPage.html",
-		"/D/github/Wiregoose/Apps/UserClient/public/js/Templates/Notification.html",
-		"/D/github/Wiregoose/Apps/UserClient/public/js/Helpers/Connect.js",
-		"/D/github/Wiregoose/Apps/UserClient/public/js/Views/RefreshContent.js",
-		"/D/github/Wiregoose/Apps/UserClient/public/js/Views/Entry/PromView.js",
-		"/D/github/Wiregoose/Apps/UserClient/public/js/Templates/PromEntry.html",
-		"/D/github/Wiregoose/Apps/UserClient/public/js/Views/Entry/DisableBlockerView.js",
-		"/D/github/Wiregoose/Apps/UserClient/public/js/Templates/FBEntry.html",
-		"/D/github/Wiregoose/Apps/UserClient/public/js/Views/FakeLoadView.js",
-		"/D/github/Wiregoose/Assets/bootstrap/less/wiregoose/w-readability.less",
-		"/D/github/Wiregoose/Apps/UserClient/public/js/Views/ArticleView/ReadableArticleView.js",
-		"/D/github/Wiregoose/Apps/UserClient/public/js/Templates/ArticleView/ReadableArticle.html",
-		"/D/github/Wiregoose/Apps/UserClient/public/js/Views/ArticleView/BasicArticleView.js",
-		"/D/github/Wiregoose/Apps/UserClient/public/js/Templates/ArticleView/Article.html",
-		"/D/github/Wiregoose/Apps/UserClient/public/js/Templates/ArticleView/ReadableArticleFail.html",
-		"/D/github/Wiregoose/Apps/UserClient/public/js/Templates/ArticleView/IframeArticle.html",
-		"/D/github/Wiregoose/Apps/UserClient/public/js/Views/ArticleView/IframeArticleView.js",
-		"/D/github/Wiregoose/Assets/Gruntfile.js",
-		"/D/github/Wiregoose/Assets/bootstrap/package.json",
-		"/D/github/Wiregoose/Assets/bootstrap/composer.json",
-		"/D/github/Wiregoose/Assets/bootstrap/less/w-client.less",
-		"/D/github/Wiregoose/Assets/bootstrap/less/utilities.less",
-		"/D/github/Wiregoose/Assets/bootstrap/less/w-admin.less",
-		"/D/github/Wiregoose/Doc/readme.md",
-		"/D/github/Wiregoose/Apps/UserClient/public/js/main.js",
-		"/D/github/Wiregoose/Apps/UserClient/public/js/Templates/AdEntry.html",
-		"/D/github/Wiregoose/Apps/UserClient/public/js/Views/Entry/AdView.js",
-		"/C/Users/apostolidis/AppData/Local/Temp/fz3temp-1/config.js",
-		"/C/Users/apostolidis/Desktop/interview",
-		"/D/github/Wiregoose/Apps/UserClient/Helpers/ResponseWrapper.js",
-		"/D/github/Wiregoose/Apps/UserClient/public/js/Views/Entry/BasicEntryView.js",
-		"/D/github/Wiregoose/Apps/UserClient/public/js/Templates/BasicEntry.html",
-		"/D/github/Wiregoose/Apps/UserClient/public/js/Views/TargetEntry.js",
-		"/D/github/Wiregoose/Apps/UserClient/public/js/Helpers/Utilities.js",
-		"/D/github/Wiregoose/Apps/UserClient/client.js",
-		"/C/Users/apostolidis/AppData/Local/Temp/fz3temp-1/Client.js",
-		"/D/github/Wiregoose/Apps/Server/Models/FetchReport.js",
-		"/D/github/Wiregoose/Apps/Server/Models/Session.js",
-		"/D/github/Wiregoose/Apps/Server/Models/Entry.js",
-		"/D/github/Wiregoose/Assets/bootstrap/Gruntfile.js",
-		"/D/github/Wiregoose/Apps/UserClient/public/css/wiregoose.min.css",
-		"/D/github/Wiregoose/Apps/UserClient/package.json",
-		"/D/github/Wiregoose/Assets/dist/js/Wiregoose.min.js",
-		"/D/github/Wiregoose/Apps/UserClient/public/js/Views/EntryView.js",
-		"/D/github/Wiregoose/Apps/Server/Routes/Entry.js",
-		"/D/github/Wiregoose/Apps/Server/Controller/RegistrationFetch.js",
-		"/C/Users/apostolidis/Desktop/bench",
-		"/D/github/Wiregoose/Apps/Server/Controller/SocialPost.js",
-		"/D/github/Wiregoose/Apps/Server/Helpers/RssConvertionPolicy.js",
-		"/D/github/Wiregoose/Doc/useful.txt",
-		"/D/Dropbox/kithara/aftapates se thola nera.txt"
+		"/D/github/Wiregoose/Apps/Server/Controller/Cleaner.js"
 	],
 	"find":
 	{
@@ -682,6 +724,75 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"refreshBasketQty",
+			"info",
+			"top",
+			"    height: 450px;\n    border: 2px solid  @gray-lighter;",
+			"    height: 440px;\n    border: 2px solid  @gray-lighter;",
+			"    height: 430px;\n    border: 2px solid  @gray-lighter;",
+			"    height: 400px;\n    border: 2px solid  @gray-lighter;\n  }",
+			".mys_f__product {\n    max-width: 180px;\n    min-width: 170px;\n    height: 400px;",
+			"sort",
+			".mys_f__basket-header",
+			"mys_f__basket-products",
+			"windowWidth",
+			"}\n",
+			"unbi",
+			"380px",
+			"370px",
+			"(@screen-xs/2)",
+			"bottom",
+			"mys_f__products",
+			"@screen-md-min",
+			"@w-screenSize-md--media",
+			"target",
+			"mys_js__product-order-detailQtyinput",
+			"mys_js__product-order-detailQtnMinusbtn",
+			"qtyVal",
+			"mys_f__product-order-detailQtybtn",
+			"button",
+			"mys_f__product-order-detailQtninput",
+			"this.$el",
+			"$el.$",
+			"detailQtnbtn",
+			"detailQtninput",
+			"white",
+			"nameLen",
+			"10px",
+			"sm",
+			"xs",
+			"label",
+			"dropdownMenu1",
+			"mys_js__products-sortBy-Action",
+			"mys_f__products-sortBy-Action",
+			"mys_js__targetProducts",
+			"div",
+			"product",
+			"1.5",
+			"deliv",
+			"deliver",
+			"ony",
+			"p",
+			"div",
+			"el",
+			"this",
+			";",
+			"this",
+			".",
+			":",
+			"productModel",
+			"ProductModel",
+			"productModel",
+			"db",
+			"Localstorage",
+			"LocalStorage",
+			"test",
+			"var",
+			"oublic",
+			"components",
+			":",
+			"chai",
+			"hint",
 			"webp",
 			"svgminPlugins",
 			"bower",
@@ -740,76 +851,7 @@
 			"dropdown-divider-bg",
 			"v",
 			"w-hd-head-info-width",
-			".w-gen-cardBox(@w-lg-entry-width, @w-lg-entry-margin);",
-			"screen and ",
-			"w-screenSize-sm--media",
-			"@w-screenSize-hd--media",
-			"w-hg-head-info-width",
-			"w-hg-entry-width",
-			"entries row",
-			"lang-menu-btn",
-			"content",
-			"W_f__header-navbar-nav-item-lang-btn",
-			"W_f__header-navbar-nav-prefLang",
-			"SetArticleViewOption",
-			"articleView",
-			"W_js__header-navbar-nav-prefLang-item",
-			"container",
-			"dropdown-menu",
-			"W_f__header-navbar-nav-prefLang-item",
-			"w-menu-article-view-container",
-			"w-article-view",
-			"other-menu-target",
-			"W_f__header-navbar-nav-item-lang-btn",
-			"lang-menu-btn",
-			"categories-menu-btn",
-			"lang-men",
-			"W_f__header-navbar-nav-item",
-			"W_f__header-navbar-brand-item",
-			"w-logo-img",
-			"navbar-nav",
-			"navbar-menu-entry",
-			"header",
-			"social-share-",
-			"find",
-			"w-social-item",
-			"w-text",
-			"w-menu-page",
-			"notification",
-			"}\nNotificationView",
-			"NotificationView",
-			"notification",
-			"w-alert-container",
-			"w-alert",
-			"'menu",
-			"\"menu",
-			"E",
-			"active",
-			"menu-check",
-			"menu-name",
-			"menu-color",
-			"v",
-			"menu-mlt-selectors-action",
-			"menu-mlt-selectors-action\nmenu-mlt-selectors-action",
-			"menu-mlt-enable-selectors-btn",
-			"menu-mlt-enable-selectors",
-			"menu-multicat",
-			"menu-cat",
-			"w_f__slideMenu-menus-left",
-			"snap-drawer-left",
-			"categories-menu",
-			"snap",
-			"2",
-			"drawers2",
-			"snap",
-			"snap-drawers",
-			"snap-content",
-			"container",
-			"content",
-			"refresh",
-			"ref",
-			"w_js__refresh",
-			".w_f__smCyrcle"
+			".w-gen-cardBox(@w-lg-entry-width, @w-lg-entry-margin);"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -833,6 +875,72 @@
 			"sheets":
 			[
 			]
+		},
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "public/js/main.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2299,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								764,
+								764
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScriptNext - ES6 Syntax/JavaScriptNext.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "public/js/views/Products.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1955,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								231,
+								231
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScriptNext - ES6 Syntax/JavaScriptNext.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				}
+			]
 		}
 	],
 	"incremental_find":
@@ -852,11 +960,18 @@
 				0,
 				1,
 				1
+			],
+			[
+				1,
+				0,
+				2,
+				1
 			]
 		],
 		"cols":
 		[
 			0.0,
+			0.417701625965,
 			1.0
 		],
 		"rows":
@@ -920,7 +1035,7 @@
 	"show_open_files": false,
 	"show_tabs": true,
 	"side_bar_visible": true,
-	"side_bar_width": 296.0,
+	"side_bar_width": 289.0,
 	"status_bar_visible": true,
 	"template_settings":
 	{

@@ -8,7 +8,7 @@ function(_, Backbone, ProductTemplate) {
   'use strict';
 
   var View = Backbone.View.extend({
-    className: 'mys_f__product pull-left',
+    className: 'mys_js__product mys_f__product pull-left',
 
     template: _.template(ProductTemplate),
 
@@ -37,8 +37,8 @@ function(_, Backbone, ProductTemplate) {
     },
 
     events: {
-      'click .mys_js__product-order-detailQtnMinusbtn': 'refreshQtyMinus',
-      'click .mys_js__product-order-detailQtnPlusbtn': 'refreshQtyPlus',
+      'click .mys_js__product-order-detailQtyMinusbtn': 'refreshQtyMinus',
+      'click .mys_js__product-order-detailQtyPlusbtn': 'refreshQtyPlus',
       'change .mys_js__product-order-detailQtyinput': 'refreshQtyInput',
       'click .mys_js__product-order-detailBasketAdd': 'onBasketQtyChange',
       'click .mys_js__product-order-shopList': 'notImplementWarning',
@@ -48,33 +48,33 @@ function(_, Backbone, ProductTemplate) {
     setQtyinputVal: function(val) {
       var qtyInput = this.$el.find('.mys_js__product-order-detailQtyinput');
       qtyInput.val(val);
-      qtyInput.change();
+      this.refreshQtyMinusState();
     },
+
+    refreshQtyMinusState: function() {
+      var qtyVal = +this.$el.find('.mys_js__product-order-detailQtyinput').val();
+      if(qtyVal>0) {
+        this.$el.find('.mys_js__product-order-detailQtyMinusbtn').prop('disabled', false);
+      }else {
+        this.$el.find('.mys_js__product-order-detailQtyMinusbtn').prop('disabled', true);
+      }
+    }, 
 
     refreshQtyMinus: function() {
       var qtyVal = +this.$el.find('.mys_js__product-order-detailQtyinput').val();
-      if(qtyVal>1) {
-        --qtyVal;
-        this.$el.find('.mys_js__product-order-detailQtnMinusbtn').prop('disabled', false);
-      }else {
-        qtyVal = 0;
-        this.$el.find('.mys_js__product-order-detailQtnMinusbtn').prop('disabled', true);
-      }
+      qtyVal = Math.max(0, qtyVal-1);
       this.setQtyinputVal(qtyVal);
     },
 
     refreshQtyPlus: function() {
       var qtyVal = +this.$el.find('.mys_js__product-order-detailQtyinput').val();
-      this.$el.find('.mys_js__product-order-detailQtnMinusbtn').prop('disabled', false);
       this.setQtyinputVal(qtyVal+1);
     },
 
     refreshQtyInput: function() {
       var qtyVal = +this.$el.find('.mys_js__product-order-detailQtyinput').val();
-      if(qtyVal<1) {
-        qtyVal = 0;
-        this.$el.find('.mys_js__product-order-detailQtyinput').val(qtyVal);
-      }
+      qtyVal = Math.max(0, qtyVal);
+      this.setQtyinputVal(qtyVal);
     },
 
     onBasketQtyChange: function() {

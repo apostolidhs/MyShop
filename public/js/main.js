@@ -2,22 +2,22 @@
 
 requirejs.config({
   paths: {
-    jquery:       '../components/jquery/dist/jquery',
-    underscore:   '../components/underscore/underscore',
-    backbone:     '../components/backbone/backbone',
-    localstorage: '../components/backbone.localStorage/backbone.localStorage',
-    text:         '../components/requirejs-text/text',
-    async:        '../components/requirejs-plugins/src/async',
-    bootstrap:    '../components/bootstrap/dist/js/bootstrap.min'
+    'jquery':       '../components/jquery/dist/jquery',
+    'underscore':   '../components/underscore/underscore',
+    'backbone':     '../components/backbone/backbone',
+    'localstorage': '../components/backbone.localStorage/backbone.localStorage',
+    'text':         '../components/requirejs-text/text',
+    'async':        '../components/requirejs-plugins/src/async',
+    'bootstrap':    '../components/bootstrap/dist/js/bootstrap.min'
   },
   shim: {
-    jquery: { exports: '$' },
-    backbone: {
+    'jquery': { exports: '$' },
+    'backbone': {
       deps: ['underscore', 'jquery'],
       exports: 'backbone'
     },
-    underscore: { exports: '_' },
-    bootstrap: { 
+    'underscore': { exports: '_' },
+    'bootstrap': { 
       deps: [ 'jquery' ] 
     }
   }
@@ -36,8 +36,8 @@ require([
   'db/DB'
 ], 
 function(_, $, Backbone, LocalStorage, 
-    Bootstrap, ProductModel, Products, 
-    ProductsView, BasketView, DB
+  Bootstrap, ProductModel, Products, 
+  ProductsView, BasketView, DB
 
 ) {
   'use strict';
@@ -71,24 +71,20 @@ function(_, $, Backbone, LocalStorage,
   });
   basketView.render();  
 
-  $(window).resize(function() {
-    var pos = productsView.$el.position();
-    var width = productsView.$el.width();
+  var resizeBasket = function() {
     var windowWidth = $(window).width();
     if(windowWidth>768) {
+      var pos = productsView.$el.position();
+      var width = productsView.$el.width();
       basketView.setViewSize(true);
-      $('#mys_js__basket').css('left',pos.left+width+10);
+      $('#mys_js__basket').css('left', pos.left+width+10);
     }else {
-      $('#mys_js__basket').css('left','');
+      $('#mys_js__basket').css('left', '');
       basketView.setViewSize(false);
     }
-  });
-
-  // _.delay(function(){
-  //   var pos = productsView.$el.position();
-  //   var width = productsView.$el.width();
-  //   $('#mys_js__basket').css('left',pos.left+width+10);
-  // }, 1);
+  };
+  $(window).resize(resizeBasket);
+  _.defer(resizeBasket, 1);
 
   products.fetch();
 });

@@ -1,11 +1,14 @@
-<% var COLLAPSE_CHAR_LENGTH = 37; %>
+<% 
+  var COLLAPSE_CHAR_LENGTH = 37; 
+
+  var name = model.name.length > COLLAPSE_CHAR_LENGTH ? 
+        model.name.substr(0, COLLAPSE_CHAR_LENGTH) + '...' : model.name;
+  var halfLen = name.length/2;
+%>
 
 <div class="mys_f__basket-product-info clearfix">
-  <img src="<%= model.image %>" alt="..." class="img-rounded mys_f__basket-product-infoImg pull-left">
+  <img src="<%= model.image %>" alt="<%= name %>" class="img-rounded mys_f__basket-product-infoImg pull-left">
 
-  <% var name = model.name.length > COLLAPSE_CHAR_LENGTH ? model.name.substr(0, COLLAPSE_CHAR_LENGTH) + '...' : model.name;
-    var halfLen = name.length/2;
-  %>
   <a href="#" class="mys_f__basket-product-infoName btn btn-link pull-left">
     <%= [
           $.trim(name.substring(0, halfLen)), 
@@ -14,7 +17,7 @@
       %>
   </a>
 
-  <button type="button" class="mys_js__basket-product-infoClose mys_f__basket-product-infoClose btn btn-default btn-xs pull-right">
+  <button type="button" class="mys_js__basket-product-infoClose mys_f__basket-product-infoClose btn btn-default btn-xs pull-right" title="Remove from basket">
     <b>X</b>
   </button>
 </div>
@@ -22,11 +25,11 @@
 <div class="mys_f__basket-product-order clearfix">
 
   <div class="clearfix pull-left" role="group" aria-label="...">
-      <button type="button" class="mys_js__product-order-detailQtyMinusbtn mys_f__product-order-detailQtybtn btn btn-default btn-xs pull-left">
+      <button type="button" class="mys_js__product-order-detailQtyMinusbtn mys_f__product-order-detailQtybtn btn btn-default btn-xs pull-left" title="Decrease product quantity">
       <span class="glyphicon glyphicon-minus" aria-hidden="true"></span>
       </button>
       <input type="number" class="mys_js__product-order-detailQtyinput mys_f__product-order-detailQtyinput pull-left" min="1">
-      <button type="button" class="mys_js__product-order-detailQtyPlusbtn mys_f__product-order-detailQtybtn btn btn-default btn-xs pull-left">
+      <button type="button" class="mys_js__product-order-detailQtyPlusbtn mys_f__product-order-detailQtybtn btn btn-default btn-xs pull-left" title="Raise product quantity">
         <span class="glyphicon glyphicon-plus" aria-hidden="true"></span>
       </button>
   </div>

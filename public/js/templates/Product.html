@@ -1,9 +1,12 @@
-<% var COLLAPSE_CHAR_LENGTH = 48; %>
+<% 
+  var COLLAPSE_CHAR_LENGTH = 48; 
+  var collapsedName = model.name.length > COLLAPSE_CHAR_LENGTH ? model.name.substr(0, COLLAPSE_CHAR_LENGTH) + '...' : model.name;
+%>
 
 <div class="mys_f__product-info">
-  <img src="<%= model.image %>" alt="..." class="img-rounded center-block mys_js__product-img mys_f__product-img">
+  <img src="<%= model.image %>" alt="<%= collapsedName %>" class="img-rounded center-block mys_js__product-img mys_f__product-img">
 
-  <p class="mys_js__product-info-name mys_f__product-info-name text-center"><%= model.name.length > COLLAPSE_CHAR_LENGTH ? model.name.substr(0, COLLAPSE_CHAR_LENGTH) + '...' : model.name  %></p>
+  <p class="mys_js__product-info-name mys_f__product-info-name text-center"><%= collapsedName %></p>
 
   <% if(!_.isEmpty(promReward)) { %>
     <p class="mys_js__product-info-promReward mys_f__product-info-promReward center-block text-center"><%= promReward[0].description %></p>
@@ -25,20 +28,20 @@
 
   <div class="mys_f__product-order-detail clearfix">
     <div class="clearfix pull-left" role="group" aria-label="...">
-      <button type="button" class="mys_js__product-order-detailQtyMinusbtn mys_f__product-order-detailQtybtn btn btn-default btn-xs pull-left">
+      <button type="button" class="mys_js__product-order-detailQtyMinusbtn mys_f__product-order-detailQtybtn btn btn-default btn-xs pull-left" title="Decrease product quantity">
       <span class="glyphicon glyphicon-minus" aria-hidden="true"></span>
       </button>
       <input type="number" class="mys_js__product-order-detailQtyinput mys_f__product-order-detailQtyinput pull-left" min="0">
-      <button type="button" class="mys_js__product-order-detailQtyPlusbtn mys_f__product-order-detailQtybtn btn btn-default btn-xs pull-left">
+      <button type="button" class="mys_js__product-order-detailQtyPlusbtn mys_f__product-order-detailQtybtn btn btn-default btn-xs pull-left" title="Raise product quantity">
         <span class="glyphicon glyphicon-plus" aria-hidden="true"></span>
       </button>
     </div>
-    <button type="button" class="mys_js__product-order-detailBasketAdd btn btn-primary btn-xs pull-right">Add</button>
+    <button type="button" class="mys_js__product-order-detailBasketAdd btn btn-primary btn-xs pull-right" title="Add product to basket">Add</button>
   </div>
 
-  <a href="#" class="mys_js__product-order-shopList mys_f__product-order-shopList center-block btn btn-link text-center"><small>Save to shopping list</small></a>
+  <a href="#" class="mys_js__product-order-shopList mys_f__product-order-shopList center-block btn btn-link text-center" title="Save the product to your shopping list"><small>Save to shopping list</small></a>
 
-  <a href="#" class="mys_js__product-order-restShelf mys_f__product-order-restShelf btn btn-link center-block text-center"><small>Rest of shelf > </small></a>
+  <a href="#" class="mys_js__product-order-restShelf mys_f__product-order-restShelf btn btn-link center-block text-center" title="See similar products"><small>Rest of shelf > </small></a>
 
 
 </div>

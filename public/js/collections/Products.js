@@ -7,13 +7,12 @@ define(
 function(_, Backbone, ProductModel) {
   'use strict';
 
-
   var Model = Backbone.Collection.extend({
-    initialize: function(localStorage) {
+    initialize: function(models, localStorage) {
       this.localStorage = localStorage;
     },
     model: ProductModel,
-    comparator: 'IsFavourite'
+    comparator: 'isFavourite'
   });
 
   return Model;

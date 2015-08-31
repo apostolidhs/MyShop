@@ -55,8 +55,10 @@ function(_, Backbone, ProductTemplate) {
       var qtyVal = +this.$el.find('.mys_js__product-order-detailQtyinput').val();
       if(qtyVal>0) {
         this.$el.find('.mys_js__product-order-detailQtyMinusbtn').prop('disabled', false);
+        this.$el.find('.mys_js__product-order-detailBasketAdd').prop('disabled', false);
       }else {
         this.$el.find('.mys_js__product-order-detailQtyMinusbtn').prop('disabled', true);
+        this.$el.find('.mys_js__product-order-detailBasketAdd').prop('disabled', true);
       }
     }, 
 
@@ -93,6 +95,7 @@ function(_, Backbone, ProductTemplate) {
         this.$el.find('.mys_js__product-inBasket-content').hide();
         this.$el.find('.mys_js__product-order').removeClass('mys_is__product-orderInBasket');
       }
+      this.model.save();
     },
 
     notImplementWarning: function() {

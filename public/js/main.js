@@ -42,20 +42,9 @@ function(_, $, Backbone, LocalStorage,
 ) {
   'use strict';
 
+  var LARGE_SCREEN = 768;
   var productsLocalStorage = new LocalStorage('Products');
-  var products = new Products(productsLocalStorage);
-
-  //initiate face database if not exist
-  var storedProducts = productsLocalStorage.findAll();
-  if(_.isEmpty(storedProducts)) {
-    var dbProducts = DB.getProducts();
-
-    _.each(dbProducts, function(dbProduct) {
-      var product = new ProductModel();
-      product.fromDbORM(dbProduct);
-      products.create(product);
-    });  
-  }
+  var products = new Products(undefined, productsLocalStorage);
 
   var productsView = new ProductsView({
     products: products,
@@ -73,7 +62,7 @@ function(_, $, Backbone, LocalStorage,
 
   var resizeBasket = function() {
     var windowWidth = $(window).width();
-    if(windowWidth>768) {
+    if(windowWidth>LARGE_SCREEN) {
       var pos = productsView.$el.position();
       var width = productsView.$el.width();
       basketView.setViewSize(true);
@@ -86,5 +75,17 @@ function(_, $, Backbone, LocalStorage,
   $(window).resize(resizeBasket);
   _.defer(resizeBasket, 1);
 
-  products.fetch();
+  //initiate face database if not exist
+  var storedProducts = productsLocalStorage.findAll();
+  if(_.isEmpty(storedProducts)) {
+    var dbProducts = DB.getProducts();
+    _.each(dbProducts, function(dbProduct) {
+      var product = new ProductModel();
+      product.fromDbORM(dbProduct);
+      products.create(product.toJSON());
+    });    
+  }else {
+    products.fetch();
+  }
+  
 });

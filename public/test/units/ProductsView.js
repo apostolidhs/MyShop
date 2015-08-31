@@ -9,7 +9,6 @@ define(function(require) {
   var ProductsView = require('./../../js/views/Products');
   var DBProducts = require('../units/DBProducts');
 
-
   var productCollection = new ProductCollection();
 
   var productsView = new ProductsView({

@@ -10,7 +10,6 @@ define(function(require) {
   var BasketView = require('./../../js/views/Basket');
   var DBProducts = require('../units/DBProducts');
 
-
   var productCollection = new ProductCollection();
 
   var productsView = new ProductsView({
@@ -51,29 +50,30 @@ define(function(require) {
       };
 
       //cache first item
-      var basketProduct = $(basketView.$el.find('.mys_js__basket-product').get(0));
-      var basketModel = productCollection.at(1);
+      var targetBasketProduct = $(basketView.$el.find('.mys_js__basket-product').get(1));
+      var targetModel = productCollection.at(2);
 
       it('basket contains 2 products', function() {
         basketShouldContain(2);
       });
 
       it('basket quantity raise on plus button clicked', function() {
-        var prevBasketQty = basketModel.get('basketQty');
-        basketProduct.find('.mys_js__product-order-detailQtyPlusbtn').click();
-        var basketQty = basketModel.get('basketQty');
+        var prevBasketQty = targetModel.get('basketQty');
+        targetBasketProduct.find('.mys_js__product-order-detailQtyPlusbtn').click();
+        var basketQty = targetModel.get('basketQty');
         basketQty.should.be.above(prevBasketQty);
       });
 
       it('append product on basket when add btn clicked', function() {
+        var productNotInBasketAddBtn = productsView.$el.find('.mys_js__product-order-detailBasketAdd').get(1);
         basketShouldContain(2);
-        var productNotInBasket = productsView.$el.find('.mys_js__product-order-detailBasketAdd').get(0);
-        $(productNotInBasket).click();
+        $(productNotInBasketAddBtn).click();
         basketShouldContain(3);
       });
 
       it('basket product dismissed when x btn clicked', function() {
-        basketProduct.find('.mys_js__basket-product-infoClose').click();
+        basketShouldContain(3);
+        targetBasketProduct.find('.mys_js__basket-product-infoClose').click();
         basketShouldContain(2);
       });
 

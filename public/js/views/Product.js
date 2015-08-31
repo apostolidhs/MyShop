@@ -95,7 +95,11 @@ function(_, Backbone, ProductTemplate) {
         this.$el.find('.mys_js__product-inBasket-content').hide();
         this.$el.find('.mys_js__product-order').removeClass('mys_is__product-orderInBasket');
       }
-      this.model.save();
+
+      // try{
+      //   //in testing enviroment there is no save functionality
+      //   this.model.save();
+      // }catch(e){}
     },
 
     notImplementWarning: function() {

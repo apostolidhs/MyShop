@@ -36,7 +36,7 @@ function(_, Backbone, ProductView, ProductsTemplate) {
       this.$el.find('.mys_js__products-wrapper').append(productView.render().$el);
     },
 
-    addAllProduct: function() {console.log('sort');
+    addAllProduct: function() {
       this.$el.find('.mys_js__products-wrapper').empty();
       this.products.each(this.addProduct, this);
     },

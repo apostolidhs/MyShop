@@ -6,23 +6,115 @@ var gulp = require('gulp'),
   nodemon = require('gulp-nodemon'),
   livereload = require('gulp-livereload'),
   less = require('gulp-less'),
+  csso = require('gulp-csso'),
   rename = require('gulp-rename'),
+  concat = require("gulp-concat"),
+  uglify = require("gulp-uglify"),
   jshint = require('gulp-jshint'),
-  notify = require('gulp-notify'),
-  autoprefixer = require('gulp-autoprefixer');
+  amdOptimize = require('amd-optimize'),
+  del = require('del'),
+  autoprefixer = require('gulp-autoprefixer'),
+  imagemin = require('gulp-imagemin'),
+  mustache = require('gulp-mustache'),
+  runSequence = require('run-sequence');
 
-gulp.task('less', function () {
-  gulp.src('./public/css/*.less')
+gulp.task('clean', function(next) {
+  del('./dist/').then(function() {next();});
+});
+
+gulp.task('jshint', function () {
+  return gulp.src('./public/js/*.js')
+    .pipe(jshint())
+    .pipe(jshint.reporter('default'));
+});
+
+gulp.task('build-less', function () {
+  return gulp.src('./public/css/*.less')
     .pipe(less())
     .pipe(autoprefixer())
+    .pipe(concat('my-shop.css'))
     .pipe(gulp.dest('./public/css'))
     .pipe(livereload());
 });
 
-gulp.task('jshint', function () {
-  gulp.src('./public/js/*.js')
-      .pipe(jshint())
-      .pipe(jshint.reporter('default'));
+gulp.task('build-fonts', function () {
+  return gulp.src('./public/fonts/*')
+    .pipe(gulp.dest('./dist/fonts'));
+});
+
+gulp.task('build-img', function () {
+  return gulp.src('./public/img/*')
+    .pipe(imagemin())
+    .pipe(gulp.dest('./dist/img'));
+});
+
+gulp.task('build-requirejs', function() {
+  return gulp.src('./public/components/requirejs/require.js')
+    .pipe(uglify())
+    .pipe(rename('require.min.js'))
+    .pipe(gulp.dest('./dist/js'));
+});
+
+gulp.task('build-js', function() {
+  return gulp.src('public/js/*.js')
+    .pipe(jshint())
+    .pipe(jshint.reporter('default'))
+    .pipe(jshint.reporter('fail'))
+    .pipe(amdOptimize('main', {
+      baseUrl: './public/js',
+      paths: {
+        'jquery':       '../components/jquery/dist/jquery',
+        'underscore':   '../components/underscore/underscore',
+        'backbone':     '../components/backbone/backbone',
+        'localstorage': '../components/backbone.localStorage/backbone.localStorage',
+        'text':         '../components/requirejs-text/text',
+        'async':        '../components/requirejs-plugins/src/async',
+        'bootstrap':    '../components/bootstrap/dist/js/bootstrap.min'
+      },
+      shim: {
+        'jquery': { exports: '$' },
+        'backbone': {
+          deps: ['underscore', 'jquery'],
+          exports: 'backbone'
+        },
+        'underscore': { exports: '_' },
+        'bootstrap': { 
+          deps: [ 'jquery' ] 
+        }
+      }
+    }))
+    .pipe(concat('my-shop.min.js'))
+    .pipe(uglify())
+    .pipe(gulp.dest('./dist/js'));
+});
+
+gulp.task('build-css', ['build-less'], function () {
+  return gulp.src('public/css/my-shop.css')
+    .pipe(csso())
+    .pipe(rename('my-shop.min.css'))
+    .pipe(gulp.dest('./dist/css'));
+});
+
+// gulp.task('build-prod-html', function () {
+//   return gulp.src('public/index.mustache')
+//     .pipe(mustache({
+//         develop: false,
+//         cssPath: './css/my-shop.min.css',
+//         jsMainPath: './js/my-shop.min.js',
+//         jsRequirePath: './js/require.min.js'
+//       }, {extension: '.html'}))
+//     .pipe(gulp.dest('./dist'));
+// });
+
+gulp.task('build-prod-html', function () {
+  return gulp.src('public/index.mustache')
+    .pipe(mustache({
+        develop: false,
+        cssPath: './css/my-shop.min.css',
+        jsMainPath: './js/my-shop.min.js',
+        jsRequirePath: './js/require.min.js'
+      }, {extension: '.html'}))
+    .pipe(gulp.dest('./dist'));
 });
 
 gulp.task('develop', function () {
@@ -38,15 +130,14 @@ gulp.task('develop', function () {
   });
 });
 
-
-gulp.task('build', function () {
+gulp.task('build-dev', function () {
   gulp.start('jshint');
   gulp.src('./public/css/*.less')
     .pipe(less())
     .pipe(gulp.dest('./public/css'));
 });
 
-gulp.task('default', [
-  'less',
-  'develop'
-]);
+gulp.task('default', function(next) {
+  runSequence('clean', ['build-js', 'build-requirejs', 'build-css', 'build-fonts', 'build-img', 'build-prod-html'], next);
+});
+

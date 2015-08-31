@@ -1,4 +1,4 @@
-/* globals requirejs:false */
+/* globals requirejs:false, window:false */
 
 requirejs.config({
   paths: {

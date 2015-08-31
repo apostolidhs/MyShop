@@ -8,7 +8,7 @@ define(function(require) {
 
   describe('ProductCollection', function() {
 
-    var productCollection = new ProductCollection();
+  var productCollection = new ProductCollection();
     _.each(DBProducts, function(DBProduct) {
       var productModel = new ProductModel();
       productModel.fromDbORM(DBProduct);

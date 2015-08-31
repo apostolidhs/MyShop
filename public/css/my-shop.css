@@ -6717,6 +6717,13 @@ button.close {
 body {
   margin: 20px 0px;
 }
+input[type='number']::-webkit-inner-spin-button,
+input[type='number']::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+}
+input[type=number] {
+  -moz-appearance: textfield;
+}
 .mys_f__container {
   border-left: 2px solid #eeeeee;
 }
@@ -6783,6 +6790,7 @@ body {
 .mys_f__product-order-detailQtyinput {
   width: 30px;
   height: 21px;
+  font-size: 12px;
 }
 .mys_f__product-inBasket {
   height: 8%;
@@ -6862,6 +6870,7 @@ body {
   }
   .mys_f__basket-header {
     width: 100%;
+    cursor: pointer;
   }
   .mys_f__basket.mys_is__basket-smallView-extend {
     overflow-y: auto;
@@ -6903,6 +6912,7 @@ body {
   }
   .mys_f__basket-header {
     width: 100%;
+    cursor: pointer;
   }
   .mys_f__basket.mys_is__basket-smallView-extend {
     overflow-y: auto;
@@ -6944,6 +6954,7 @@ body {
   }
   .mys_f__basket-header {
     width: 100%;
+    cursor: pointer;
   }
   .mys_f__basket.mys_is__basket-smallView-extend {
     overflow-y: auto;

@@ -22,7 +22,7 @@ function() {
                       "Type": "Reward"
                   }
               ],
-              "Image": "./img/IDShot_110x110.jpg"
+              "Image": "http://img.tesco.com/Groceries/pi/341/5018374888341/IDShot_110x110.jpg"
           },
            {
               "Id": 32597,
@@ -34,7 +34,7 @@ function() {
               "BasketQty": 0,
               "IsFavourite": true,
               "Promotions": [],
-              "Image": "./img/IDShot_110x110.jpg"
+              "Image": "http://img.tesco.com/Groceries/pi/471/5051140150471/IDShot_110x110.jpg"
           },
           {
               "Id": 32598,
@@ -57,7 +57,7 @@ function() {
                       "Type": "Reward"
                   }
               ],
-              "Image": "./img/IDShot_110x110.jpg"
+              "Image": "http://img.tesco.com/Groceries/pi/808/0000003036808/IDShot_110x110.jpg"
           },
           {
               "Id": 12598,
@@ -80,7 +80,7 @@ function() {
                       "Type": "Reward"
                   }
               ],
-              "Image": "./img/IDShot_110x110.jpg"
+              "Image": "http://img.tesco.com/Groceries/pi/808/0000003036808/IDShot_110x110.jpg"
           },
           {
               "Id": 12598,
@@ -108,7 +108,7 @@ function() {
                       "Type": "Reward"
                   }
               ],
-              "Image": "./img/IDShot_110x110.jpg"
+              "Image": "http://img.tesco.com/Groceries/pi/303/5018374888303/IDShot_110x110.jpg"
           },
           {
               "Id": 15598,
@@ -126,7 +126,7 @@ function() {
                       "Type": "Reward"
                   }
               ],
-              "Image": "./img/IDShot_110x110.jpg"
+              "Image": "http://img.tesco.com/Groceries/pi/686/0000050326686/IDShot_110x110.jpg"
           } 
       ]
   };

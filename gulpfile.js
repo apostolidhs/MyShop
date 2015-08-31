@@ -95,16 +95,16 @@ gulp.task('build-css', ['build-less'], function () {
     .pipe(gulp.dest('./dist/css'));
 });
 
-// gulp.task('build-prod-html', function () {
-//   return gulp.src('public/index.mustache')
-//     .pipe(mustache({
-//         develop: false,
-//         cssPath: './css/my-shop.min.css',
-//         jsMainPath: './js/my-shop.min.js',
-//         jsRequirePath: './js/require.min.js'
-//       }, {extension: '.html'}))
-//     .pipe(gulp.dest('./dist'));
-// });
+gulp.task('build-dev-html', function () {
+  return gulp.src('public/index.mustache')
+    .pipe(mustache({
+        develop: true,
+        cssPath: './css/my-shop.css',
+        jsMainPath: './js/main.js',
+        jsRequirePath: './components/requirejs/require.js'
+      }, {extension: '.html'}))
+    .pipe(gulp.dest('./public'));
+});
 
 gulp.task('build-prod-html', function () {
   return gulp.src('public/index.mustache')
@@ -117,10 +117,10 @@ gulp.task('build-prod-html', function () {
     .pipe(gulp.dest('./dist'));
 });
 
-gulp.task('develop', function () {
+gulp.task('develop', ['build-dev-html'], function () {
   livereload.listen();
   gulp.watch('./public/js/*.js', ['jshint']);
-  gulp.watch('./public/css/*.less', ['less']);
+  gulp.watch('./public/css/*.less', ['build-less']);
   nodemon({
     script: 'bin/www'
   }).on('restart', function () {
@@ -130,14 +130,15 @@ gulp.task('develop', function () {
   });
 });
 
-gulp.task('build-dev', function () {
+gulp.task('build-dev', ['build-dev-html'], function () {
   gulp.start('jshint');
   gulp.src('./public/css/*.less')
     .pipe(less())
     .pipe(gulp.dest('./public/css'));
 });
 
-gulp.task('default', function(next) {
+gulp.task('build', function(next) {
   runSequence('clean', ['build-js', 'build-requirejs', 'build-css', 'build-fonts', 'build-img', 'build-prod-html'], next);
 });
 
+gulp.task('default', ['build']);

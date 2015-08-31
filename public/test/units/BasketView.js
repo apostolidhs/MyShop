@@ -49,7 +49,7 @@ define(function(require) {
         basketProducts.should.have.length(len);
       };
 
-      //cache first item
+      //cache first item and the corresponding view
       var targetBasketProduct = $(basketView.$el.find('.mys_js__basket-product').get(1));
       var targetModel = productCollection.at(2);
 

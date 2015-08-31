@@ -6,6 +6,14 @@ body {
   margin: 20px 0px;
 }
 
+input[type='number']::-webkit-inner-spin-button, 
+input[type='number']::-webkit-outer-spin-button { 
+    -webkit-appearance: none;
+}
+input[type=number] {
+    -moz-appearance:textfield;
+}
+
 .gen-mys_f__container(@max-width) {
   .mys_f__container {
     max-width: @max-width;
@@ -84,6 +92,7 @@ body {
 .mys_f__product-order-detailQtyinput {
   width: 30px;
   height: 21px;
+  font-size: 12px;
 }
 
 .mys_f__product-inBasket {
@@ -115,6 +124,7 @@ body {
   }
   .mys_f__basket-header {
     width: 100%;
+    cursor: pointer;
   }
   .mys_f__basket.mys_is__basket-smallView-extend {
     overflow-y: auto;

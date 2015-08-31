@@ -1,44 +1,22 @@
 # MyShop
 
-MyShop is a study case application for modern frontend applications.
+## install
 
-Technologies used: require.js, backbone.js, underscore.js, jquery, bootstrap, less, mocha, chai, gulp
-
-Gulp build principals like livereload, autoprefix, uglify and many more. 
-
-
-## Install
-
-### Requirements
+### requirements
   In order to build the application the following tools required:
   node.js, npm, bower
 
-### Build
+### build
   run the following commands in the root of the project:
 
-  1. npm install
-  2. bower install
-  3. gulp build
+ * npm install
+ * bower install
+ * gulp build
+ * open public/index.html
 
-### Run
-
-#### Development version
-  execute
-  ```
-  >gulp develop
-  ```
-  The page served at http://localhost:3000/
-  *develop version served from server due to cross-origin errors*
-
-#### Production version
-  dist/index.html 
 
 ## test framework
-  Mocha with chai used as test framework
-  
-###  execute tests
-  execute
-  ```
-  >gulp develop
-  ```
-  The test page served at http://localhost:3000/test
+  Mocha is used as test framework
+
+### execute test
+  * open test/index.html
